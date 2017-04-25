@@ -1,0 +1,53 @@
+<!-- index.html -->
+<!DOCTYPE html>
+
+<html ng-app="shenanigan">
+
+<head>
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Optimize mobile viewport -->
+
+    <title>Shenanigans Portal</title>
+
+    <!-- SCROLLS -->
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"><!-- load bootstrap -->
+        <style>
+            html                    { overflow-y:scroll; }
+            body                    { padding-top:50px; }
+            #itemList              { margin-bottom:30px; }
+            #button              { margin-bottom:30px; }
+        </style>
+    <!-- SPELLS -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <!-- load jquery -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
+    <!-- load angular -->
+    <script src="../js/core.js"></script>
+</head>
+
+<body ng-controller="mainController">
+    <div class="container">
+        <div id="button" class="text-center">
+            <button class="btn btn-primary btn-lg" ng-click="showNewItem()">It's Shenanigans Time!</button>
+        </div>
+        <div id="itemList" class="jumbotron text-center">
+            <div>
+                <span>{{item}}</span>
+            </div>
+        </div>
+        <div id="itemForm" class="row">
+            <div class="col-sm-10 col-sm-offset-1 text-center">
+                <form class="form-inline">
+                    <div class="form-group col-sm-8 col-sm-offset-1">
+                        <input type="text" class="form-control text-center" placeholder="Type your new shenanigan idea here" ng-model="formData.descr">
+                    </div>
+                    <button type="submit" class="btn btn-primary col-sm-2" ng-click="createItem()">Add</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

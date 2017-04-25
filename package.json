@@ -1,0 +1,29 @@
+{
+  "name": "no captain left behind initiative",
+  "version": "1.0.0",
+  "description": "a web app for crowdsourced player rankings by pairwise comparison for use in league drafting to achieve greater team parity",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/doberste8/no_captain_left_behind_initiative.git"
+  },
+  "keywords": [
+    "draft",
+    "league"
+  ],
+  "author": "stephan dober",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/doberste8/no_captain_left_behind_initiative/issues"
+  },
+  "homepage": "https://github.com/doberste8/no_captain_left_behind_initiative#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "method-override": "^2.3.7",
+    "mysql": "^2.12.0"
+  }
+}
