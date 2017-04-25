@@ -1,5 +1,5 @@
 // public/js/core.js
-var shenanigan = angular.module('shenanigan', []);
+var nclbi = angular.module('nclbi', []);
 
 function mainController($scope, $http) {
     $scope.formData = {};
