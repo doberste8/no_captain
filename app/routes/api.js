@@ -3,6 +3,7 @@
 var api = require('express').Router();
 var players = require('../models/players');
 var draftMatches = require('../models/draft_matches');
+var draftList = require('../models/draft_list');
 
 // middleware for all api requests
 api.use(function(req, res, next) {
@@ -49,5 +50,15 @@ api.route('/draft_matches')
     .delete(function(req, res) {
         draftMatches.delete(req.query.user, res);
     });
+    
+api.route('/draft_list')
+
+    .get(function(req, res) {
+        var event = '%';
+        var year = '%';
+        if (req.query.event) event = req.query.event;
+        if (req.query.year) year = req.query.year;
+        draftList.get(event, year, res);
+    })
 
 module.exports = api;
