@@ -4,6 +4,10 @@ var nclbi = angular.module('nclbi', []);
 function mainController($scope, $http) {
     $scope.formData = {};
     $scope.aName = "Name";
+    $scope.aNickname = "\"Nickname\"";
+    $scope.aAge = "Age";
+    $scope.aPS = "PS";
+    $scope.aHeight = "Height";
     $scope.bName = "Name";
     var draftData = {};
 
