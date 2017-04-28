@@ -30,7 +30,7 @@
 <body ng-controller="mainController">
     <div class="container">
         <div id="button" class="text-center">
-            <button class="btn btn-primary btn-lg" ng-click="showNewItem()">It's Shenanigans Time!</button>
+            <button class="btn btn-primary btn-lg" ng-click="showNewItem()">Populate Names!</button>
         </div>
         <div id="itemList" class="jumbotron text-center">
             <div>
@@ -48,6 +48,97 @@
             </div>
         </div>
     </div>
+    
+    <div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<ul class="nav nav-tabs">
+				<li class="active">
+					<a href="#">Home</a>
+				</li>
+				<li>
+					<a href="#">Profile</a>
+				</li>
+				<li class="disabled">
+					<a href="#">Messages</a>
+				</li>
+				<li class="dropdown pull-right">
+					 <a href="#" data-toggle="dropdown" class="dropdown-toggle">Dropdown<strong class="caret"></strong></a>
+					<ul class="dropdown-menu">
+						<li>
+							<a href="#">Action</a>
+						</li>
+						<li>
+							<a href="#">Another action</a>
+						</li>
+						<li>
+							<a href="#">Something else here</a>
+						</li>
+						<li class="divider">
+						</li>
+						<li>
+							<a href="#">Separated link</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-9">
+			<div class="row">
+				<div class="col-md-6">
+					 
+					<button type="button" class="btn btn-primary btn-block" ng-click="addMatch(0,1)">
+						<span>{{aName}}</span>
+					</button>
+				</div>
+				<div class="col-md-6">
+					 
+					<button type="button" class="btn btn-primary btn-block" ng-click="addMatch(1,0)">
+						<span>{{bName}}</span>
+					</button>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="progress">
+						<div class="progress-bar progress-success">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<ol>
+				<li>
+					Lorem ipsum dolor sit amet
+				</li>
+				<li>
+					Consectetur adipiscing elit
+				</li>
+				<li>
+					Integer molestie lorem at massa
+				</li>
+				<li>
+					Facilisis in pretium nisl aliquet
+				</li>
+				<li>
+					Nulla volutpat aliquam velit
+				</li>
+				<li>
+					Faucibus porta lacus fringilla vel
+				</li>
+				<li>
+					Aenean sit amet erat nunc
+				</li>
+				<li>
+					Eget porttitor lorem
+				</li>
+			</ol>
+		</div>
+	</div>
+</div>
 </body>
 
 </html>
